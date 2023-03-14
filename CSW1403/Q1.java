@@ -10,12 +10,12 @@ public class Q1 {
         }
         return s;
     }
-    static boolean LOA(int[] a, int x){
-        for (int j : a) {
-            if (x == j)
-                return true;
+    static int LOA(int[] a, int x){
+        for (int i = 0; i< a.length; i++) {
+            if (a[i] == x)
+                return i;
         }
-        return false;
+        return -1;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,11 +26,11 @@ public class Q1 {
         for (int i = 0; i < a; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println("The sum of all the elements of the array: "+SOA(arr) );
+        System.out.println("The sum of all the elements of the array: "+SOA(arr));
         System.out.print("Enter search element: ");
         int x = sc.nextInt();
         System.out.println("Searching...");
-        if(LOA(arr,x)){
+        if(LOA(arr,x)!=-1){
             System.out.println("Element was found.");
         } else System.out.println("Element does not exist.");
     }
