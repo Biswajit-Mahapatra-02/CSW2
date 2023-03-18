@@ -3,7 +3,7 @@ package CSW1703;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//WAP to search for an element in an array using binary search.
+// WAP to search for an element in an array using binary search.
 public class BS {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
