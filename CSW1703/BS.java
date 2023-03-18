@@ -21,7 +21,8 @@ public class BS {
         if(i != -1) System.out.println("The element was found at index: "+ i);
         else System.out.println("The element was not found.");
     }
-
+    // Madam told to do this using iterative binary search, I have used recursive because it is shorter
+    // Continue your own discretion!
     static int BinarySearch(int[] a, int i, int j, int x){
         int mid = (i+j)/2;
         if(i>=j) return -1;
