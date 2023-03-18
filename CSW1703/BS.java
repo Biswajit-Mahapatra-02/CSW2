@@ -22,7 +22,7 @@ public class BS {
         else System.out.println("The element was not found.");
     }
     // Madam told to do this using iterative binary search, I have used recursive because it is shorter
-    // Continue your own discretion!
+    // Continue at your own discretion!
     static int BinarySearch(int[] a, int i, int j, int x){
         int mid = (i+j)/2;
         if(i>=j) return -1;
