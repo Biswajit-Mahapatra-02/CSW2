@@ -1,7 +1,7 @@
 package CSW1403;
 
 import java.util.Scanner;
-
+// WAP in java to take n numbers as input into an array and calculate the sum of all the elements. Then search for a number given by the user.
 public class Q1 {
     static int SOA(int[] a){
         int s = 0;

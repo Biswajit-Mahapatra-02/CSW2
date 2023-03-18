@@ -1,8 +1,6 @@
 package CSW1703;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Scanner;
 
 //WAP to search for an element in an array using binary search.
