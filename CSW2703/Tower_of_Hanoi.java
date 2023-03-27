@@ -19,4 +19,3 @@ public class Tower_of_Hanoi {
         towerOfHanoi(n, 'A', 'C','B');
     }
 }
-

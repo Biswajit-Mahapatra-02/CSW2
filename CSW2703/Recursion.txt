@@ -9,3 +9,5 @@ Hanoi
 BS
 GCD
 Fibonacci
+
+How to generate all permutation in an integer array?
