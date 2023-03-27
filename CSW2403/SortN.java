@@ -1,11 +1,9 @@
 package CSW2403;
 
 import java.util.Arrays;
-//import java.util.InputMismatchException;
 import java.util.Scanner;
 
 // Sort 1 to N
-// The Smallest possible missing number
 public class SortN {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
