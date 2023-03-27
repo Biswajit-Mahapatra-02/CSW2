@@ -34,10 +34,10 @@ public class SmallestPossibleMissingNumber {
 //    }
     public static int SmallestPositiveMissingNumber2(int[] arr, int size){
         HashMap<Integer, Integer> hs = new HashMap<>();
-        for(int i = 0;i< size; i++) {
+        for(int i = 0;i < size; i++) {
             hs.put(arr[i], 1);
         }
-        for(int i=1;i< size+1; i++) {
+        for(int i=1;i < size+1; i++) {
             if (!hs.containsKey(i)){
                 return i;
             }
