@@ -2,7 +2,11 @@ package CSW2803;
 // WAP to create an arraylist of string value. Add six strings to it. Iterate through it using iterator, for each loop
 // and for loop. Display values, find the index of the first occurrence of and element in the arraylist and find the
 // index of the last occurrence of an element in the arraylist.
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
 public class AL {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -32,6 +36,5 @@ public class AL {
         } else {
             System.out.println("The element does not exist.");
         }
-
     }
 }
