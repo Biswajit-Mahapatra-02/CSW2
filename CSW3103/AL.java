@@ -5,7 +5,6 @@ package CSW3103;
 import java.util.*;
 public class AL {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         ArrayList<Integer> num = new ArrayList<>();
         num.add(1);
         num.add(2);
