@@ -46,11 +46,9 @@ public class Q2 {
     }
 
     public static Student search(LinkedList<Student> SL, String sname){
-        ListIterator<Student> LI = SL.listIterator();
 
-        while(LI.hasNext()){
-            Student temp = LI.next();
-            if(sname.equals(temp.name))
+        for (Student temp : SL) {
+            if (sname.equals(temp.name))
                 return temp;
         }
         return null;
