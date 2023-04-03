@@ -1,0 +1,30 @@
+comparing arraylist and linkedlist
+Difference:
+
+linkedList implements list as well as deque interface
+arraylist implements only list interface
+
+arraylist uses dynamic arrays internally, because size is not fixed
+linkedlist uses double linkedlist DS to store its data internally
+
+The insertion and deletion of data is slower in arraylist, as it needs to shift all its elements to do that.
+The insertion and deletion of data is faster in linkedlist, as it does not have to shift all its elements, it just changes its pointers.
+
+Arraylist uses less memory locations
+linkedlist uses more memory
+
+Accessing data is faster in arraylist, as we just need the index.
+Accessing data is slower in linkedlist, as we need to traverse the nodes to find the required element.
+
+Arraylist's default size is 4.
+LinkedList does not have any default size.
+
+Similarity:
+Same collection framework
+Implements list interface
+Can store duplicate elements
+non synchronized
+Ordered Collection, i.e. the insertion ordered is maintained.
+Can contain null values
+
+Linkedlist class can be used as a list, stack or queue.
