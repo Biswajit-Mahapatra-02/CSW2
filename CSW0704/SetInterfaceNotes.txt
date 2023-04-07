@@ -1,0 +1,44 @@
+HashSet, TreeSet classes implement the set interface.
+They do not allow duplicate values.
+Both are not thread safe.
+They are not synchronised.
+
+******HashSet******
+Uses hashtable data structure.
+Time complexity for different operations is O(1)
+null values are allowed.
+faster than tree set.
+order of output is random.
+
+******TreeSet******
+Uses self balancing RBT
+Time complexity for different operations is O(lg n)
+null values are not allowed
+slower than HashSet
+order of output is sorted
+
+******LinkedHashSet******
+Uses hashtable with linked list
+more expensive than hashset
+null values are allowed
+Order of output is same as insertion order
+
+
+*********MAPS*********
+TreeMap, HashMap and LinkedHashMap implement the set interface
+They store values in key value pairs
+
+******TreeMap******
+TreeMap does not allow null keys but allows multiple null values
+Time complexity is O(lg n)
+Output comes in sorted order of keys.
+
+******HashMap******
+HashMap allows one null key and multiple null values
+Time complexity is O(1)
+Output comes in random order
+
+******LinkedHashMap******
+LinkedHashMap allows one null key and multiple null values
+Time complexity is O(1)
+Output comes in order of insertion
