@@ -1,0 +1,13 @@
+Abstract Data Type
+
+Where the user does not know the exact code implementation of the data structure and just implements in the project
+using classes and interfaces.
+
+java example: Stack and Queue
+Stack is a data structure implemented using arrays, linked lists, etc.
+Queue is a data structure implemented using Almost Complete Binary Trees.
+
+Collection is a class
+Collections is an interface
+
+List, Set, sortedset, queue, deque and maps are interfaces.

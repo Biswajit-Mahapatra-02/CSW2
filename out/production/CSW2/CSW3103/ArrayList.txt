@@ -1,0 +1,11 @@
+ArrayList class implements list interface
+ArrayList class is a representation of the dynamic array
+It does not have a fixed size
+Its size increases or decreases depending on whether we are adding or removing elements from it respectively
+It uses array data structure internally. Hence, it allows to fetch elements through index
+It allows duplicate as well as null values
+It is an ordered collection. Hence, it maintains the insertion order of the elements
+You cannot create an arraylist of primitive datatype
+Arraylist is not synchronized
+
+
