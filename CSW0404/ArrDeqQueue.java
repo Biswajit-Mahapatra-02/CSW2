@@ -13,10 +13,11 @@ public class ArrDeqQueue {
         enqueue("E");
         enqueue("F");
         System.out.println("Imposter queue values: "+imposterQueue);
-        System.out.print("Imposter stack values in reverse: ");
+        System.out.print("Imposter queue values in reverse: ");
         for (Iterator<String> it = imposterQueue.descendingIterator(); it.hasNext(); ) {
             System.out.print(it.next()+" ");
         }
+        System.out.println();
         System.out.println("Imposter queue peek/front: "+front());
         System.out.println("Imposter queue values: "+imposterQueue);
         System.out.println("Imposter queue dequeue: "+ dequeue());
