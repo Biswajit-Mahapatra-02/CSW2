@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class sort012 {
     public static void sorting012(int[] nums) {
-        byte zeroFreq=0;
-        byte oneFreq =0;
-        byte twoFreq = 0;
+        int zeroFreq=0;
+        int oneFreq =0;
+        int twoFreq = 0;
         for (int i:nums) {
             if (i==0) {zeroFreq++;}
             else if (i==1) {oneFreq++;}

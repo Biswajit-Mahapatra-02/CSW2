@@ -13,27 +13,21 @@ public class sort01 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        sorting01(arr,arr.length);
+        sorting01(arr);
         System.out.print("The sorted array: "+ Arrays.toString(arr));
     }
-    public static void sorting01(int[] arr, int size){
-        int l = 0;
-        int r = size-1;
-        while(l<r){
-            while(arr[l] == 0)
-                l++;
-            while(arr[r]==1)
-                r--;
-            if(l<r){
-                swap(arr,l,r);
-                l++;
-                r--;
-            }
+    public static void sorting01(int[] num){
+        int zeroFreq=0;
+        int oneFreq =0;
+        for (int i:num) {
+            if (i==0) {zeroFreq++;}
+            else if (i==1) {oneFreq++;}
         }
-    }
-    public static void swap(int[] arr, int x, int y){
-        int temp = arr[x];
-        arr[x] = arr[y];
-        arr[y] = temp;
+        for (int i = 0; i < zeroFreq; i++) {
+            num[i] = 0;
+        }
+        for (int i = zeroFreq; i < oneFreq + zeroFreq; i++) {
+            num[i] = 1;
+        }
     }
 }
