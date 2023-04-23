@@ -7,7 +7,7 @@ public class StackS {
     public static void main(String[] args) {
         Stack <String> stringStack = new Stack<>();
         stringStack.add("A");
-        stringStack.add("B");
+        stringStack.add("Q2b");
         stringStack.add("C");
         stringStack.add("D");
         stringStack.add("E");

@@ -50,11 +50,11 @@ public class Q56 {
             LinkedList<Integer> que = new LinkedList<Integer>();
             que.add(source);
             visited[source] = true;
-            while (que.isEmpty() == false) {
+            while (!que.isEmpty()) {
                 int curr = que.remove();
                 LinkedList<Edge> adl = gph.Adj.get(curr);
                 for (Edge adn : adl) {
-                    if (visited[adn.dest] == false) {
+                    if (!visited[adn.dest]) {
                         visited[adn.dest] = true;
                         que.add(adn.dest);
                     }
@@ -73,7 +73,7 @@ public class Q56 {
             visited[index] = true;
             LinkedList<Edge> adl = gph.Adj.get(index);
             for (Edge adn : adl) {
-                if (visited[adn.dest] == false)
+                if (!visited[adn.dest])
                     dfsUtil(gph, adn.dest, visited);
             }
         }

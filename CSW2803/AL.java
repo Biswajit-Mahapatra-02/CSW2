@@ -12,9 +12,9 @@ public class AL {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> S = new ArrayList<>();
         S.add("A");
-        S.add("B");
+        S.add("Q2b");
         S.add("C");
-        S.add("B");
+        S.add("Q2b");
         S.add("E");
         S.add("A");
         Iterator<String> iter = S.iterator();

@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class PriQue {
     public static void main(String[] args) {
         PriorityQueue<String> PQ = new PriorityQueue<>();
-        PQ.add("B");
+        PQ.add("Q2b");
         PQ.add("C");
         PQ.add("A");
         PQ.add("D");

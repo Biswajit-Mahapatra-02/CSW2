@@ -56,7 +56,7 @@ public class SetInterfaceQuestion {
         System.out.println("LinkedHashSet: "+LHS);
 
         HM.put("A",1);
-        HM.put("B",2);
+        HM.put("Q2b",2);
         HM.put("C",3);
         HM.put("D",4);
         HM.put("E",5);
@@ -70,7 +70,7 @@ public class SetInterfaceQuestion {
         System.out.println("HashMap: "+HM);
 
         TM.put("A",1);
-        TM.put("B",2);
+        TM.put("Q2b",2);
         TM.put("C",3);
         TM.put("D",4);
         TM.put("E",5);
@@ -84,7 +84,7 @@ public class SetInterfaceQuestion {
         System.out.println("TreeMap: "+TM);
 
         LHM.put("A",1);
-        LHM.put("B",2);
+        LHM.put("Q2b",2);
         LHM.put("C",3);
         LHM.put("D",4);
         LHM.put("E",5);

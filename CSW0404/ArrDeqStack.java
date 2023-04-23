@@ -8,7 +8,7 @@ public class ArrDeqStack {
     public static void main(String[] args) {
 
         imposterStack.addLast("A");
-        imposterStack.addLast("B");
+        imposterStack.addLast("Q2b");
         imposterStack.addLast("C");
         imposterStack.addLast("D");
         imposterStack.addLast("E");

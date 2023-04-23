@@ -7,7 +7,7 @@ public class ArrDeqQueue {
     public static ArrayDeque <String> imposterQueue = new ArrayDeque<>();
     public static void main(String[] args) {
         enqueue("A");
-        enqueue("B");
+        enqueue("Q2b");
         enqueue("C");
         enqueue("D");
         enqueue("E");
