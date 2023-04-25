@@ -20,8 +20,7 @@ public class Q1 {
             while(A.next != null){
                 A = A.next;
             }
-            Node newNode = new Node(val,null);
-            A.next = newNode;
+            A.next = new Node(val,null);
         }
         public static void createList(int val){
             start = new Node(val,null);
