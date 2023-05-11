@@ -22,28 +22,27 @@ public class Q14 {
         }
         MinDiffPair(arr1,n,arr2,n1);
     }
-    public static int MinDiffPair(int[] arr1, int size1, int[] arr2, int size2) {
+    public static void MinDiffPair(int[] arr1, int size1, int[] arr2, int size2) {
         int minDiff = 9999999;
-        int first = 0;
-        int second = 0;
+        int f = 0;
+        int s = 0;
         int out1 = 0, out2 = 0, diff;
         Arrays.sort(arr1);
         Arrays.sort(arr2);
-        while (first < size1 && second < size2) {
-            diff = Math.abs(arr1[first] - arr2[second]);
+        while (f < size1 && s < size2) {
+            diff = Math.abs(arr1[f] - arr2[s]);
             if (minDiff > diff) {
                 minDiff = diff;
-                out1 = arr1[first];
-                out2 = arr2[second];
+                out1 = arr1[f];
+                out2 = arr2[s];
             }
-            if (arr1[first] < arr2[second])
-                first += 1;
+            if (arr1[f] < arr2[s])
+                f += 1;
             else
-                second += 1;
+                s += 1;
         }
         System.out.println("The pair is :: " + out1 + out2);
         System.out.println("Minimum difference is :: " + minDiff);
-        return minDiff;
     }
 
 }
