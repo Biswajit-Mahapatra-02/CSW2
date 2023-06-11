@@ -90,7 +90,7 @@ public class LL {
             }
             if(index == 0)
                 deleteFirst();
-            else if (index == size()) {
+            else if (index == size()-1) {
                 deleteLast();
             }
             else{
