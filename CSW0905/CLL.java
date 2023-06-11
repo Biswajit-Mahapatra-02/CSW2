@@ -103,7 +103,7 @@ public class CLL{
             }
             L2.addNode(tail.value);
         }
-        public void copyReversed( CircularLinkedList L2){
+        public void copyReversed(CircularLinkedList L2){
             Node A = tail.next;
             L2.createList(A.value);
             A = A.next;
