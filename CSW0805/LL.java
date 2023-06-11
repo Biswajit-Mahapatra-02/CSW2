@@ -142,12 +142,12 @@ public class LL {
         for (int i = 0; i < n-1; i++) {
             A.addNode(sc.nextInt());
         }
-//        System.out.print("Enter the index of the element to be deleted: ");
-//        int d = sc.nextInt();
-//        A.deleteAny(d);
-//        System.out.print("Enter the element of which all occurrences are to be deleted: ");
-//        int e = sc.nextInt();
-//        A.deleteAllOccurrences(e);
+        System.out.print("Enter the index of the element to be deleted: ");
+        int d = sc.nextInt();
+        A.deleteAny(d);
+        System.out.print("Enter the element of which all occurrences are to be deleted: ");
+        int e = sc.nextInt();
+        A.deleteAllOccurrences(e);
         System.out.println("Copy one linked list to other: ");
         LinkedList B = new LinkedList(A.start);
         B.addNode(23);
