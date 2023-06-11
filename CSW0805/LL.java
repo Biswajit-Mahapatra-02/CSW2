@@ -19,8 +19,8 @@ public class LL {
             createList(value);
         }
 
-        public LinkedList(Node A) {
-            copyList(A);
+        public LinkedList() {
+            start = null;
         }
 
         public Node start;
@@ -29,9 +29,6 @@ public class LL {
             start.next = null;
         }
 
-        public void copyList(Node A){
-            start = A;
-        }
 
         public void addNode(int value){
             Node A = start;
@@ -149,12 +146,30 @@ public class LL {
         int e = sc.nextInt();
         A.deleteAllOccurrences(e);
         System.out.println("Copy one linked list to other: ");
-        LinkedList B = new LinkedList(A.start);
+        LinkedList B = new LinkedList();
+        copyList(A,B);
+        A.display();
+        B.display();
         B.addNode(23);
         A.display();
         B.display();
-        A.reverse(A.start);
-        LinkedList C = A;
-        C.display();
+        copyListReverse(A,B);
+        A.display();
+        B.display();
+    }
+    public static void copyList(LinkedList L1, LinkedList L2){
+        Node start = L1.start;
+        L2.createList(start.value);
+        start = start.next;
+        while(start!=null){
+            L2.addNode(start.value);
+            start=start.next;
+        }
+    }
+    public static void copyListReverse(LinkedList L1, LinkedList L2){
+        LinkedList temp = new LinkedList();
+        copyList(L1,temp);
+        temp.reverse(temp.start);
+        copyList(temp,L2);
     }
 }
