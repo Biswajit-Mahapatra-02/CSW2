@@ -15,19 +15,32 @@ public class LL {
         }
     }
     public static class LinkedList{
-        public static Node start;
-        public static void createList(int value){
+        public LinkedList(int value) {
+            createList(value);
+        }
+
+        public LinkedList(Node A) {
+            copyList(A);
+        }
+
+        public Node start;
+        public void createList(int value){
             start = new Node(value);
             start.next = null;
         }
-        public static void addNode(int value){
+
+        public void copyList(Node A){
+            start = A;
+        }
+
+        public void addNode(int value){
             Node A = start;
             while(A.next!=null){
                 A = A.next;
             }
             A.next = new Node(value,null);
         }
-        public static void display(){
+        public void display(){
             Node A = start;
             while(A!=null){
                 System.out.print(A.value + " ");
@@ -35,7 +48,7 @@ public class LL {
             }
             System.out.println();
         }
-        public static int search(int value){
+        public int search(int value){
             Node A = start;
             int i = 0;
             while(A!=null){
@@ -46,22 +59,22 @@ public class LL {
             }
             return -1;
         }
-        public static void deleteFirst(){
+        public void deleteFirst(){
             start = start.next;
         }
-        public static void deleteLast(){
+        public void deleteLast(){
             Node A = start;
             while(A.next.next!=null){
                 A = A.next;
             }
             A.next = null;
         }
-        public static void deleteAllOccurrences(int value){
+        public void deleteAllOccurrences(int value){
             while(search(value)!=-1){
                 deleteFirstOccurrence(value);
             }
         }
-        public static void deleteFirstOccurrence(int value){
+        public void deleteFirstOccurrence(int value){
             Node A = start;
             int i = 0;
             while(A!=null){
@@ -73,7 +86,11 @@ public class LL {
                 i++;
             }
         }
-        public static void deleteAny(int index){
+        public void deleteAny(int index){
+            if(index>=size()){
+                System.out.println("Index Out of Bounds.");
+                return;
+            }
             if(index == 0)
                 deleteFirst();
             else if (index == size()) {
@@ -91,7 +108,7 @@ public class LL {
                 A.next = A.next.next;
             }
         }
-        public static int size(){
+        public int size(){
             Node A = start;
             int i = 0;
             while(A!=null){
@@ -100,7 +117,7 @@ public class LL {
             }
             return i;
         }
-        public static void reverse(Node node) {
+        public void reverse(Node node) {
             Node prev = null;
             Node current = node;
             Node next;
@@ -117,27 +134,27 @@ public class LL {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the size of the linked list: ");
+        System.out.println("Enter the size of the linked list: ");
         int n = sc.nextInt();
         System.out.print("Enter the first value of the linked list: ");
-        LinkedList.createList(sc.nextInt());
-        System.out.println("Enter the next "+(n-1)+ " values: ");
+        LinkedList A = new LinkedList(sc.nextInt());
+        System.out.print("Enter the rest "+(n-1)+" values of the linked list: ");
         for (int i = 0; i < n-1; i++) {
-            LinkedList.addNode(sc.nextInt());
+            A.addNode(sc.nextInt());
         }
-        System.out.print("Current list: ");
-        LinkedList.display();
-        System.out.print("Enter a value to be searched: ");
-        int x = LinkedList.search(sc.nextInt());
-        if(x!=-1)
-            System.out.println("The element was found at index: "+x);
-        else
-            System.out.println("Element was not found.");
-        System.out.print("Enter the index of the number to be deleted: ");
-        LinkedList.deleteAny(sc.nextInt());
-        System.out.print("Enter the number to remove all occurrences: ");
-        LinkedList.deleteAllOccurrences(sc.nextInt());
-        LinkedList.reverse(LinkedList.start);
-        LinkedList.display();
+//        System.out.print("Enter the index of the element to be deleted: ");
+//        int d = sc.nextInt();
+//        A.deleteAny(d);
+//        System.out.print("Enter the element of which all occurrences are to be deleted: ");
+//        int e = sc.nextInt();
+//        A.deleteAllOccurrences(e);
+        System.out.println("Copy one linked list to other: ");
+        LinkedList B = new LinkedList(A.start);
+        B.addNode(23);
+        A.display();
+        B.display();
+        A.reverse(A.start);
+        LinkedList C = A;
+        C.display();
     }
 }
