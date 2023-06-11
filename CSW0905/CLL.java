@@ -93,7 +93,7 @@ public class CLL{
             }
             return -1;
         }
-        public void copy( CircularLinkedList L2){
+        public void copy(CircularLinkedList L2){
             Node A = tail.next;
             L2.createList(A.value);
             A = A.next;
